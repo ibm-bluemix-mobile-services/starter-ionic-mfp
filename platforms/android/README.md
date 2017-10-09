@@ -38,8 +38,7 @@ This starter invokes an adapter in a Mobile foundation server.
 
 ##### Steps:
 * Goto the project folder and find a shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh** and ensure that you have execute and write permissions in order to run these scripts.
-* run **mfpregisterapp.sh** with package (name) as the input (refer AndroidManifest.xml for this value).
-* run mfpstartersetup.sh. This should set up the Mobile Foundation prereqs for running the starter
+* run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
 * Replace url in config.xml with the host of the mobile foundation provisioned for you. <mfp:server runtime="mfp" url="" />
 * Add the mfp cordova plugin
 ```bash
