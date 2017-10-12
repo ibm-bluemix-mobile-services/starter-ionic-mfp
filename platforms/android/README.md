@@ -17,7 +17,7 @@ Bluemix Mobile Foundation Starter with Ionic 3 in Android
 
 
 ### Summary
-This Bluemix Mobile Starter will showcase the Ionic 3 getting started with Mobile Foundations on Bluemix.
+This Bluemix Mobile Starter showcases the getting started steps for Ionic 3  with Mobile Foundation on Bluemix.
 
 
 ### Requirements
@@ -39,11 +39,11 @@ This starter invokes an adapter in a Mobile foundation server.
 ##### Steps:
 * Goto the project folder and find a shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh** and ensure that you have execute and write permissions in order to run these scripts.
 * run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
-* Replace url in config.xml with the host of the mobile foundation provisioned for you. <mfp:server runtime="mfp" url="" />
 * Add the mfp cordova plugin
 ```bash
 $ ionic cordova plugin add cordova-plugin-mfp
 ```
+* Replace url in config.xml with the host of the mobile foundation provisioned for you. <mfp:server runtime="mfp" url="" />
 
 * Build the ionic application to run ionic build scripts
 ```bash
