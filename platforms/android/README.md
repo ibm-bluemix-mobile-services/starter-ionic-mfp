@@ -39,6 +39,10 @@ This starter invokes an adapter in a Mobile foundation server.
 ##### Steps:
 * Go to the project folder and find the shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh**. Ensure that you have **execute** and **write** permissions in order to run these scripts.
 * Run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
+* MFP cordova plugin requires updated cordova platforms.
+```bash
+$ ionic cordova platform update android ios
+```
 * Add the mfp cordova plugin
 ```bash
 $ ionic cordova plugin add cordova-plugin-mfp
