@@ -38,15 +38,20 @@ $ npm install
 This starter invokes an adapter in a Mobile foundation server.
 
 ##### Steps:
+###### Android
 * Go to the **platforms/android** folder and find the shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh**. Ensure that you have **execute** and **write** permissions in order to run these scripts.
 * Run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter.
+
+###### iOS
 * Go to the **platforms/ios** folder and find the shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh**. Ensure that you have **execute** and **write** permissions in order to run these scripts.
 * Run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
-* MFP cordova plugin requires updated cordova platforms.
+
+* Update the platforms to get the latest cordova platforms
 ```bash
 $ ionic cordova platform update android ios
 ```
-* If cordova fails in updating the ios platform, please remove and add the ios platform again.
+
+* (Optional) Only if the above step (cordova platform update) fails in updating the ios platform, please remove and add the ios platform again.
 ``` bash
 $ ionic cordova platform rm ios
 $ ionic cordova platform add ios
@@ -56,12 +61,14 @@ $ ionic cordova platform add ios
 ```bash
 $ ionic cordova plugin add cordova-plugin-mfp
 ```
+
 * Replace url in config.xml with the host of the mobile foundation provisioned for you. <mfp:server runtime="mfp" url="" />
 
 * Build the ionic application to run ionic build scripts
 ```bash
 $ ionic build
 ```
+
 * Open the project under **platforms/android** in Android Studio and perform a Gradle Sync.
 * Open the project under **platforms/ios** in XCode and build it.
 
